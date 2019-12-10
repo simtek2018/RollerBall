@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cdcf4fe39616941b2b76a1edb4c776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfDamage: 10
+  amountOfDamage: 2
 --- !u!114 &506186739486672173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24b424c9a2ba6b48806242c318d2058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosivePrefab: {fileID: 0}
+  explosivePrefab: {fileID: 340704120034134025, guid: 38d62e49adf22e644846f8b8e1d4049f,
+    type: 3}
+  hitpoints: 1
 --- !u!54 &506186739486672172
 Rigidbody:
   m_ObjectHideFlags: 0

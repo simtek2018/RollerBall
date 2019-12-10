@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chaser : MonoBehaviour
 {
     private Transform target;
-    private float speed = 4f;
+    [SerializeField] float speed = 4f;
 
     void Start()
     {

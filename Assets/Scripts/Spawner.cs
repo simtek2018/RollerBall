@@ -14,12 +14,12 @@ public class Spawner : MonoBehaviour {
     IEnumerator SpawnCoroutine() { 
         yield return new WaitForSeconds(spawnTime);
         while (true) {
-            SpawnCoins();
+            SpawnItem();
             yield return new WaitForSeconds(spawnTime);
         }
     }
 
-    void SpawnCoins() {
+    void SpawnItem() {
         float xPos = Random.Range(-maxPos, maxPos);
         float zPos = Random.Range(-maxPos, maxPos);
         Vector3 newPos = new Vector3(xPos, transform.position.y, zPos);
