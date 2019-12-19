@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
     [SerializeField] GameObject explosivePrefab;
-    [SerializeField] int hitpoints = 10;
+    public int hitpoints = 10;
 
     // Update is called once per frame
     void Update() {

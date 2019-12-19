@@ -6,15 +6,21 @@ public class Chaser : MonoBehaviour
 {
     private Transform target;
     [SerializeField] float speed = 4f;
+    GameObject player;
 
     void Start()
     {
-        target = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player");
+        if (player != null) {
+            target = player.transform;
+        }
     }
 
     void Update()
     {
-        transform.LookAt(target);
-        transform.position += transform.forward * speed * Time.deltaTime;
+        if (target != null) {
+            transform.LookAt(target);
+            transform.position += transform.forward * speed * Time.deltaTime;
+        }
     }
 }
